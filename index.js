@@ -1,0 +1,1 @@
+//index principal de javascript
