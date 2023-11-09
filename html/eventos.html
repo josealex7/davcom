@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/eventos.css">
+    <title>Document</title>
+</head>
+    <body>
+        <div class="w-100 text-center mt-5">
+            <h2>Administra tus eventos</h2>
+            <div class="container">
+                <div class="row d-flex justify-content-around  mt-4">
+                  <div class="col-5 bg-white rounded shadow border border-lightk">
+                    <form id="formularioEvento">
+                        <div class="form-group  mt-4">
+                            <label for="titulo" class="font-weight-bold">Título</label>
+                            <input type="text" class="form-control" id="titulo" placeholder="Ingrese el título" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="participantes" class="font-weight-bold">Participantes</label>
+                            <div class=" d-flex align-items-center">
+                                <div class="m-1" id="contenedor-participantes">
+                                    <input type="text" class="form-control" id="participantes" placeholder="Ingrese los participantes" required>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary m-1" id="agregarParticipantes">Agregar Participantes</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="fechaInicio" class="font-weight-bold">Fecha de Inicio</label>
+                            <input type="datetime-local" class="form-control" id="fechaInicio" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fechaFinal" class="font-weight-bold">Fecha Final</label>
+                            <input type="datetime-local" class="form-control" id="fechaFinal" required>
+                        </div>
+                        <div class="form-group mt-4">
+                            <label for="descripcion" class="font-weight-bold">Descripción</label>
+                            <textarea class="form-control" id="descripcion" placeholder="Ingrese la descripción" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary m-4" id="agregarEvento">Agregar Evento</button>
+                    </form>
+                  </div>
+                  <div class="col-7">
+                    <div id="calendario" class="bg-white rounded shadow border border-lightk p-4"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detalles del Evento</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="titulo">Título</label>
+                        <input type="text" class="form-control" id="titulo-modal" placeholder="Ingrese el título">
+                    </div>
+                    <div class="form-group">
+                        <label for="participantes" class="font-weight-bold">Participantes</label>
+                        <div class=" d-flex align-items-center">
+                            <div class="m-1" id="contenedor-participantes-modal">
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaInicio">Fecha de Inicio: </label>
+                        <input type="datetime-local" class="form-control" id="fechaInicio-modal">
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaFinal">Fecha Final</label>
+                        <input type="datetime-local" class="form-control" id="fechaFinal-modal">
+                    </div>
+                    <div class="form-group mt-4">
+                        <label for="descripcion" class="font-weight-bold">Descripción</label>
+                        <textarea class="form-control" id="descripcion" placeholder="Ingrese la descripción" required></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="display: none;"  id="detalle-evento-modal"></button>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="module" src="../scripts/eventos.js"></script>
+    </body>
+</html>
