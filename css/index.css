@@ -1,1 +1,35 @@
 /*Index principal de Estilos*/
+p{
+    color: rgb(12,45,74);
+    text-align: center;
+    text-shadow: -2px 2px 4px;
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+    font-size: 38px;
+}
+body{
+    background-image: url(/imagenes/logo_web.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+button{
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+    font-size: 30px;
+    background-color: rgb(17, 16, 16);
+    color: rgb(14, 102, 44);
+    border-radius: 30px;
+    
+}
+.REGISTRARSE{
+    margin-top: 1%;
+    margin-right:2.5%;
+    text-align: right;
+}
+.INGRESAR{
+    margin-top: 0.1%;
+    margin-right: 3.5%;
+    text-align: right;
+}
