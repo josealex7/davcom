@@ -5,7 +5,7 @@ p{
     text-shadow: -2px 2px 4px;
     font-family: 'Open Sans';
     src: url('fonts/OpenSans-Regular.ttf') format('truetype');
-    font-size: 38px;
+    font-size: 35px;
 }
 body{
     background-image: url(/imagenes/logo_web.png);
@@ -14,15 +14,15 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-button{
+/* button{
     font-family: 'Open Sans';
     src: url('fonts/OpenSans-Regular.ttf') format('truetype');
     font-size: 30px;
     background-color: rgb(17, 16, 16);
-    color: rgb(14, 102, 44);
-    border-radius: 30px;
+    color: rgb(20, 122, 54);
+    border-radius: 20px;
     
-}
+} */
 .REGISTRARSE{
     margin-top: 1%;
     margin-right:2.5%;
