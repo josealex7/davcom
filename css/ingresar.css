@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;700&display=swap');
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:'Poppins', sans-serif;
+}
+
+section {
+   width: 100%;
+   min-height: 100vh;
+   background:url(../imagenes/logo_web.png) no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.contenedor{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   max-width: 380px;
+   background-color: rgba(233, 208, 182, 0.499);
+   border: 3px solid rgba(253, 253, 253, 0.856);
+   border-radius: 0;
+   height: 450px;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   padding: 2rem 3rem;
+
+}
+.contenedor h2{
+   font-size: 2.3rem;
+   color: rgb(98, 63, 63);
+   text-align: center;
+}
+
+.input-contenedor{
+       position: relative;
+       margin: 30px 0;
+       max-width: 310px;
+       border-bottom: 2px solid #ffffff;
+   
+}
+
+.input-contenedor label{
+       position: absolute;
+       top:30%;
+       left: 10px;
+       transform: translate(-30%);
+       color:  rgba(158, 119, 105, 0.998);
+       font-size: 1.2rem;
+       pointer-events:none;
+       transition: all 0.6s ease-in-out;
+       font-weight:bold;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+       top: -5px
+   }
+.input-contenedor input{
+   width: 100%;
+   height: 70px;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   font-size: 1rem;
+   padding: -35px 0 5px;
+   color:#000000;
+
+}   
+.input-contenedor i{
+   position: absolute;
+   color:#000000;
+   font-size: 2rem;
+   top: 20px;
+   right: 8px;
+}
+.olvidar{
+   margin: -15px 0 15px;
+   font-size: .9em;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+}
+.olvidar label input{
+   margin:3px;
+}
+.olvidar label a{
+   color:rgb(0, 0, 0);
+   text-decoration: none;
+   transition: .3s;
+   font-size: .9em;
+}
+
+.olvidar label a:hover{
+   text-decoration: underline;
+}
+
+button{
+   width: 100%;
+   height: 45px;
+   border-radius: 40px;
+   background: rgba(187, 150, 137, 0.89);
+   border:none;
+   font-weight: bold;
+   cursor: pointer;
+   outline: none;
+   font-size: 1rem;
+   transition: .4s;
+   color: #fcfcfc;
+}
+button:hover{
+   opacity:0.9;
+
+}
+.Registrar{
+   font-size: .8rem;
+   color: rgb(0, 0, 0);
+   text-align: center;
+   margin: 20px 0 10px;
+}
+.Registrar p a{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-weight: bold;
+   transition: 0.3s;
+
+}
+.Registrar p a:hover{
+   text-decoration: underline;
+   
+
+}

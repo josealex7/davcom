@@ -8,8 +8,13 @@ import { getFirestore,
     doc,
     getDoc,
     updateDoc,
+    where,
+    query
    } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
-
+import { getAuth, 
+  createUserWithEmailAndPassword, 
+  signInWithEmailAndPassword 
+} from "https://www.gstatic.com/firebasejs/9.6.2/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAPF9nBIk0fdNDVPZUrCx9ABNQA1_Bh9aI",
@@ -23,10 +28,16 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app); 
+const auth = getAuth(app);
 
 export {
     db,
     collection,
     getDocs,
-    addDoc
+    addDoc,
+    auth,
+    createUserWithEmailAndPassword, 
+    signInWithEmailAndPassword,
+    where,
+    query
 }

@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div class="background-container"></div>
     <div class="container d-flex justify-content-center vh-100">
         <div class="container-form mt-5 sign-up d-flex flex-column justify-content-start">
             <div class="my-5">
@@ -27,10 +28,10 @@
             </div>
             <form class="formulario mt-5">
                 <h2 class="create-account my-3">Crear una cuenta</h2>
-                <input type="text" class="form-control my-2" placeholder="Nombre">
-                <input type="email" class="form-control my-2" placeholder="Email">
-                <input type="password" class="form-control my-2" placeholder="Contraseña">
-                <button type="button" class="btn btn-success btn-block my-2">Registrarse</button>
+                <input type="text" id="nombreInput" class="form-control my-2" placeholder="Nombre" required>
+                <input type="email" id="emailInput" class="form-control my-2" placeholder="Email" required>
+                <input type="password" id="passwordInput" class="form-control my-2" placeholder="Contraseña" required>
+                <button type="button" id="registroBtn" class="btn btn-success btn-block my-2">Registrarse</button>
                 <div class="iconos d-flex justify-content-around my-4">
                     <div class="border-icon">
                         <i class='bx bxl-instagram'></i>
@@ -45,6 +46,7 @@
             </form>
         </div>
     </div>
+    <script type="module" src="../scripts/registrar.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

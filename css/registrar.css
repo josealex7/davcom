@@ -1,7 +1,19 @@
-body{
+body {
+    margin: 0; /* Asegura que no haya márgenes en el cuerpo de la página */
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca el contenedor detrás del contenido principal */
+
+    /* Establece la imagen de fondo y aplica el desenfoque */
     background-image: url(/imagenes/logo_web.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    filter: blur(1.5px); /* Ajusta el valor según lo desees */
 }
