@@ -15,35 +15,60 @@
 </head>
 
 <body>
-    <div class="background-container"></div>
-    <div class="container d-flex justify-content-center vh-100">
-        <div class="container-form mt-5 sign-up d-flex flex-column justify-content-start">
-            <div class="my-5">
-                <div>
-                    <h2>Bienvenidos</h2>
-                    <p>Si ya tienes una cuenta por favor inicia sesión aquí</p>
-                    <button onclick="location.href='ingresar.html'", class="btn btn-primary">Ingresar</button>
-                    <button onclick="location.href='../index.html'", class="btn btn-secondary">Regresar</button>
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenidos</h2>
+                <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+                <button onclick="location.href='ingresar.html'", class="sign-up-btn">Iniciar Sesion</button>
+                <button onclick="location.href='../index.html'", class="sign-up-btn">Regresar</button>
+            </div>
+        </div>
+        <form class="formulario">
+            <h2 class="create-account">Crear una cuenta</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
                 </div>
             </div>
-            <form class="formulario mt-5">
-                <h2 class="create-account my-3">Crear una cuenta</h2>
-                <input type="text" id="nombreInput" class="form-control my-2" placeholder="Nombre" required>
-                <input type="email" id="emailInput" class="form-control my-2" placeholder="Email" required>
-                <input type="password" id="passwordInput" class="form-control my-2" placeholder="Contraseña" required>
-                <button type="button" id="registroBtn" class="btn btn-success btn-block my-2">Registrarse</button>
-                <div class="iconos d-flex justify-content-around my-4">
-                    <div class="border-icon">
-                        <i class='bx bxl-instagram'></i>
-                    </div>
-                    <div class="border-icon">
-                        <i class='bx bxl-linkedin'></i>
-                    </div>
-                    <div class="border-icon">
-                        <i class='bx bxl-facebook-circle'></i>
-                    </div>
+            <p class="cuenta-gratis">Crear una cuenta gratis</p>
+            <input type="text" placeholder="Nombre" id="nombreInput">
+            <input type="email" placeholder="Email" id="emailInput">
+            <input type="password" placeholder="Contraseña" id="passwordInput">
+            <input type="button" id="registroBtn" value="Registrarse">
+        </form>
+    </div>
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="create-account">Iniciar Sesion</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
                 </div>
-            </form>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            <input type="button" value="Iniciar Sesion">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
         </div>
     </div>
     <script type="module" src="../scripts/registrar.js"></script>
