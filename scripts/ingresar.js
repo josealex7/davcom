@@ -14,7 +14,8 @@ const iniciarSesion = () => {
             const user = userCredential.user;
             
             const usuario = {
-                uid: user
+                uid: user,
+                email:email
             };
     
             const usuarioString = JSON.stringify(usuario);

@@ -39,7 +39,7 @@ body {
 }
 
 .personal-info {
-    background-image: url(fondo.jpg);
+    background-image: url(../imagenes/fondo.jpg);
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;

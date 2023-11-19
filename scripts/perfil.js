@@ -24,3 +24,13 @@ window.onload = function() {
         }
     });
 };
+
+const cerrarSesion = () => {
+    localStorage.removeItem("usuario");
+    location.href = "../html/ingresar.html";
+  };
+  
+$("#cerrarSesion").on("click", function () {
+    cerrarSesion();
+  });
+  

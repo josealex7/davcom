@@ -35,6 +35,8 @@ export {
     collection,
     getDocs,
     addDoc,
+    doc,
+    updateDoc,
     auth,
     createUserWithEmailAndPassword, 
     signInWithEmailAndPassword,
