@@ -25,6 +25,7 @@ const registerUser = (email, password) => {
 
 const crearUsuario = (usuario_id) => {
     const nombreInput = document.getElementById("nombreInput").value;
+    const email = document.getElementById("emailInput").value;
 
     let nuevoUsuario = {
         nombre: nombreInput,

@@ -78,3 +78,14 @@ document.getElementById("actualizarDatosUsuario").addEventListener("click", asyn
 
 // Llama a la función para cargar los datos del usuario cuando la página carga
 window.addEventListener("load", cargarDatosUsuario);
+
+
+const cerrarSesion = () => {
+    localStorage.removeItem("usuario");
+    location.href = "../html/ingresar.html";
+  };
+  
+$("#cerrarSesion").on("click", function () {
+    cerrarSesion();
+  });
+  

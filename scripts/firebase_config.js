@@ -35,13 +35,13 @@ export {
     collection,
     getDocs,
     addDoc,
+    doc,
     auth,
     createUserWithEmailAndPassword, 
     signInWithEmailAndPassword,
     where,
     query,
     deleteDoc,
-    doc,
     updateDoc,
     getDoc
 }
