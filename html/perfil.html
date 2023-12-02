@@ -5,59 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información Personal</title>
     <link rel="stylesheet" type="text/css" href="../css/perfil.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="../imagenes/logo.jpeg" alt="Logo de la empresa" class="imagen-logo" />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./notificaciones.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./eventos.html">Eventos</a>
+            </li>
+            <li class="nav-item  active">
+                <a class="nav-link" href="#">Mi Perfil</a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-danger ml-2" id="cerrarSesion">Cerrar sesión</button>
+            </li>
+            </ul>
+        </div>
+    </nav>
     <div class="header">
         <h1>Información Personal</h1>
-        <img src='logo.jpg' class='imgRedonda' />
-        </div>
+        <img src='../imagenes/img-perfil.jpg' class='imgRedonda' />
     </div>
     <div class="personal-info">
         <h2>Datos Personales</h2>
         <form id="personal-info-form">
-            <p>
-                <label for="nombre">Nombre:</label>
-            </p>
-            <p>
-                <input type="text" id="nombre" name="nombre">
-            </p>
-            <p><label for="apellido">Apellido:</label>
-            </p>
-            <p><input type="text" id="apellido" name="apellido">
-            </p>
+            <p><label for="nombre">Nombre:</label></p>
+            <p><input type="text" id="nombre" name="nombre"></p>
+            <p><label for="apellido">Apellido:</label></p>
+            <p><input type="text" id="apellido" name="apellido"></p>
             <p><label for="edad">Edad:</label></p>
-            <p><input type="text" id="edad" name="edad">
-            </p>
-            <p><label for="lugar-nacimiento">Lugar de Nacimiento:</label>
-            </p>
-            <p><input type="text" id="lugar-nacimiento" name="lugar-nacimiento">
-            </p>
-            <p><label for="genero">Género:</label>
-            </p>
-            <p><input type="text" id="genero" name="genero">
-            </p>
-            <p><label for="correo">Correo electrónico:</label>
-            </p>
-            <p><input type="email" id="correo" name="correo">
-            </p>
-            <p> <label for="telefono">Teléfono:</label>
-            </p>
-            <p><input type="tel" id="telefono" name="telefono">
-            </p> 
-            <p><label for="telefono-fijo">Teléfono Fijo:</label>
-            </p>
-            <p><input type="tel" id="telefono-fijo" name="telefono-fijo">
-            </p>
-            <p><label for="residencia">Lugar de Residencia:</label>
-            </p>
-            <p><input type="text" id="residencia" name="residencia">
-            </p>
-            <p><label for="dispositivos">Dispositivos Conectados:</label>
-            </p>
-            <p><input type="text" id="dispositivos" name="dispositivos">
-            </p>
+            <p><input type="text" id="edad" name="edad"></p>
+            <p><label for="lugar-nacimiento">Lugar de Nacimiento:</label></p>
+            <p><input type="text" id="lugar-nacimiento" name="lugar-nacimiento"></p>
+            <br>
+            <p><label for="genero">Género:</label></p>
+            <p><input type="text" id="genero" name="genero"></p>
+            <p><label for="correo">Correo electrónico:</label></p>
+            <p><input type="email" id="correo" name="correo"></p>
+            <br>
+            <p><label for="telefono">Celular:</label></p>
+            <p><input type="tel" id="telefono" name="telefono"></p>
+            <p><label for="telefono-fijo">Teléfono Fijo:</label></p>
+            <p><input type="tel" id="telefono-fijo" name="telefono-fijo"></p>
+            <!-- Agrega este botón en tu formulario -->
+            <button type="button" id="actualizarDatosUsuario" class="btn btn-primary">Actualizar Datos</button>
         </form>
     </div>
-    <script src="../scripts/perfil.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="../scripts/perfil.js"></script>
 </body>
 </html>

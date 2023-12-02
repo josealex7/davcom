@@ -1,0 +1,40 @@
+body {
+    margin: 0; /* Asegura que no haya márgenes en el cuerpo de la página */
+}
+
+.background-container {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca el contenedor detrás del contenido principal */
+
+    /* Establece la imagen de fondo y aplica el desenfoque */
+    background-image: url(../imagenes/diseno.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(1px); /* Ajusta el valor según lo desees */
+}
+
+
+
+.fc-event-time {
+    font-weight: bold;
+}
+
+.imagen-logo {
+    width: 100px;
+    background-position: center;
+}
+
+.open-button {
+    background-color: #3caf47;
+    color: #050505;
+}
+
+.delete-button {
+    background-color: #5310c0;
+    
+color: #0a0a0a;
+}

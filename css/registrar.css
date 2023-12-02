@@ -10,11 +10,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../imagenes/3.jpg);
+    background-image: url(../imagenes/logo_web.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
 }
 
 .container-form {

@@ -39,5 +39,9 @@ export {
     createUserWithEmailAndPassword, 
     signInWithEmailAndPassword,
     where,
-    query
+    query,
+    deleteDoc,
+    doc,
+    updateDoc,
+    getDoc
 }

@@ -29,7 +29,7 @@ const crearUsuario = (usuario_id) => {
     let nuevoUsuario = {
         nombre: nombreInput,
         apellido: "",
-        celular: "",
+        telefono_fijo: "",
         correo: "",
         edad: "",
         genero: "",

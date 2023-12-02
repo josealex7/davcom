@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    background-color: #333;
+    background-color: #413d3d;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -17,6 +17,7 @@ body {
     height:250px;
     border-radius:150px;
     border:2px solid #666;
+    object-fit: cover;
 }
 
 .header h1 {
@@ -39,7 +40,7 @@ body {
 }
 
 .personal-info {
-    background-image: url(fondo.jpg);
+    background-image: url(../imagenes/fondo.jpg);
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -54,4 +55,9 @@ body {
 
 h2 {
     color: #333;
+}
+
+
+.imagen-logo {
+    width: 100px;
 }

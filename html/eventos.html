@@ -16,14 +16,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="./notificaciones.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  active">
                     <a class="nav-link" href="#">Eventos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Mi Perfil</a>
+                    <a class="nav-link" href="./perfil.html">Mi Perfil</a>
                 </li>
                 <li class="nav-item">
                     <button class="btn btn-danger ml-2" id="cerrarSesion">Cerrar sesión</button>
@@ -80,34 +80,38 @@
                     <h5 class="modal-title" id="exampleModalLabel">Detalles del Evento</h5>
                 </div>
                 <div class="modal-body">
-                    <div class="form-group">
-                        <label for="titulo">Título</label>
-                        <input type="text" class="form-control" id="titulo-modal" placeholder="Ingrese el título">
-                    </div>
-                    <div class="form-group">
-                        <label for="participantes" class="font-weight-bold">Participantes</label>
-                        <div class=" d-flex align-items-center">
-                            <div class="m-1" id="contenedor-participantes-modal">
-                        
+                    <form id="formularioEventoEdicion" class="border m-2 p-2 border-lightk"></form>
+                        <input id="id-evento-show" hidden />
+                        <div class="form-group">
+                            <label for="titulo">Título</label>
+                            <input type="text" class="form-control" id="titulo-modal" placeholder="Ingrese el título">
+                        </div>
+                        <div class="form-group">
+                            <label for="participantes" class="font-weight-bold">Participantes</label>
+                            <div class=" d-flex align-items-center">
+                                <input id="contenedor-participantes-modal" class="form-control" readonly/>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="fechaInicio">Fecha de Inicio: </label>
-                        <input type="text" class="form-control" id="fechaI-modal-1">
-                        <input type="datetime-local" class="form-control" id="fechaInicio-modal">
-                    </div>
-                    <div class="form-group">
-                        <label for="fechaFinal">Fecha Final</label>
-                        <input type="text" class="form-control" id="fechaF-modal-1">
-                        <input type="datetime-local" class="form-control" id="fechaFinal-modal">
-                    </div>
-                    <div class="form-group mt-4">
-                        <label for="descripcion" class="font-weight-bold">Descripción</label>
-                        <textarea class="form-control" id="descripcion" placeholder="Ingrese la descripción" required></textarea>
-                    </div>
+                        <div class="form-group">
+                            <label for="fechaInicio">Fecha de Inicio: </label>
+                            <input type="text" class="form-control" id="fechaI-modal-1">
+                            <input type="datetime-local" class="form-control" id="fechaInicio-modal">
+                        </div>
+                        <div class="form-group">
+                            <label for="fechaFinal">Fecha Final</label>
+                            <input type="text" class="form-control" id="fechaF-modal-2">
+                            <input type="datetime-local" class="form-control" id="fechaFinal-modal">
+                        </div>
+                        <div class="form-group">
+                            <label for="fechaFinal">Descripción</label>
+                            <input type="text" class="form-control" id="descripcion-modal">
+                        </div>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="cancelar-evento">Cancelar</button>
+                        <button type="submit" class="btn btn-success" id="editar-evento">Editar</button>
+                    </form>
                 </div>
                 <div class="modal-footer">
+                    
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
                 </div>
